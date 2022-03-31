@@ -1,0 +1,75 @@
+/*import read from "readline-sync";
+/*let nome =  read.question("Informe seu nome:");
+console.log(nome);
+
+for(let i=0; i<10; i++){
+
+    console.log("Esse é o  %.2f° numero", i+1);
+    i+=1.7;
+}*/
+
+//continuação estrutura de repetição
+
+// for in
+let pessoas = {
+    nome: "mateus",
+    idade:20,
+    time: "São Paulo"
+};
+
+for(let i in pessoas){
+    console.log(pessoas[i]);
+    if(pessoas.nome=="mateus"){
+        continue;
+    }
+}
+
+//for in
+
+let cidades = [
+    {nome:"Malhada", habitates:5000},
+    {nome:"Salvador", habitates:1000},
+    {nome:"Feira de Santana", habitates:460000}
+];
+
+for(let j in cidades){
+    console.log(cidades[j].nome +" = "+ cidades[j].habitates);
+}
+
+let mateus = [
+    "Santos",
+    "Silva",
+    "mateus",
+    "leila"
+];
+
+for(let n of mateus){ //na posição n de mateus ele emprime os dados
+    console.log("Nomes:"+n); // nomes da posição N, onde n é o indice de mateus que começa na posição 0
+}
+
+let clienteAcademia = [
+    {id: 1, nome:"Soraia ", telefone:"7799805564"},
+    {id: 2, nome:"Sabrina ", telefone:"779836431"},
+    {id: 1, nome:"Mateus ", telefone:"7799805564"},
+    {id: 2, nome:"jonas ", telefone:"779836431"},
+];
+
+for(let n of clienteAcademia){
+    let nome = n.nome;
+    let telefone = n.telefone;
+    console.log("Nome:" + nome);
+    console.log("Telefone:"+ telefone)
+};
+
+// Curso 
+
+let cursos = [
+    {nome:"Inglês", valor:3500, cargaHoraria:250},
+    {nome:"Espanhou", valor:3500, cargaHoraria:300},
+    {nome:"Francês", valor:3500, cargaHoraria:400},
+    {nome:"Mandarin", valor:3500, cargaHoraria:100},
+];
+
+for(let i in cursos){
+    console.log("Curso: "+cursos[i].nome + " Valor: "+ cursos[i].valor + " Carga horaria: "+ cursos[i].cargaHoraria + " horas");
+}
